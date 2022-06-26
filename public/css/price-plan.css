@@ -1,0 +1,52 @@
+.pp-top {
+    padding-top: 150px;
+    text-align: center;
+    background-color: #0BA1DD;
+    color: white;
+    font-size: 32px;
+
+
+}
+
+.pp-top h3 {
+    color: white;
+    padding-top: 52px;
+}
+
+.pp-main {
+    background-color: #0BA1DD;
+
+    padding-top: 70px;
+    width: 100%;
+    text-align: center;
+}
+.pp-main img {
+    width: 80%;
+}
+
+
+.t-fav {
+
+    position: relative;
+    margin: 1.2em 0;
+    padding: 0.5em 1em;
+    border: solid 2px #0BA1DD;
+    border-radius: 8px;
+}
+.t-fav .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 16px;
+    background: #FFF;
+    color: #0BA1DD;
+    font-weight: bold;
+}
+.t-fav p {
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+}

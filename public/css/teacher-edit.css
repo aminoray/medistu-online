@@ -1,0 +1,185 @@
+/* Common */
+
+button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.container {
+    margin: auto;
+    background: #0ba1dd;
+    height: 130vh;
+}
+
+.edit-container {
+    width: calc(100% - 160px);
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.edit-content {
+    margin: 0 auto;
+    width: 700px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.image-container {
+    margin-bottom: 24px;
+}
+
+.input-form-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    padding: 0 60px;
+}
+
+.input-form-table th {
+    padding-right: 20px;
+    width: 128px;
+}
+
+.input-form-table select {
+    width: 188px;
+    height: 28px;
+    font-size: 16px;
+}
+
+.input {
+    width: 322px;
+    height: 23px;
+    font-size: 16px;
+}
+
+.checkbox {
+    margin-left: 3px;
+}
+
+.check-data {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit-content > h3 {
+    font-size: 20px;
+    font-family: ヒラギノ丸ゴ Pro;
+    color: #0ba1dd;
+    padding-top: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.ac-subject {
+    font-size: 16px;
+    font-family: ヒラギノ丸ゴ Pro;
+    border-bottom: 2px solid #707070;
+    display: inline-block;
+    color: #0ba1dd;
+    padding-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.ac-subject-data {
+    text-align: center;
+}
+
+.edit-btn {
+    width: 240px;
+    height: 32px;
+    background: #0ba1dd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.input-form-table {
+    text-align: left;
+    margin: auto;
+}
+
+.mypage-link {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1024px) {
+    /*　for iPad 　*/
+
+    .edit-content {
+        width: 100%;
+    }
+
+    .edit-container {
+        width: calc(90% - 30px);
+    }
+
+    .input-form-table {
+        padding: 0 5%;
+    }
+
+    .input {
+        width: 75%;
+    }
+
+    .input-form-table th {
+        width: 84px;
+        font-size: 14px;
+        font-weight: lighter;
+        font-family: ヒラギノ丸ゴ Pro;
+        color: #999999;
+        padding-right: 2em;
+        padding-left: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /*　for mobile　*/
+
+    .container {
+        height: 150vh;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .edit-container {
+        width: 100%;
+    }
+
+    .edit-content {
+        box-shadow: none;
+    }
+
+    .input-form-table {
+        padding: 0 2%;
+    }
+
+    #grade {
+        padding-right: 0px;
+        /* display: inline; */
+    }
+
+    .input-form-table th {
+        padding-right: 10px;
+    }
+
+    .edit-content {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .container {
+        height: calc(100vh + 60px);
+    }
+
+    .edit-content {
+        margin-bottom: 100px;
+    }
+}

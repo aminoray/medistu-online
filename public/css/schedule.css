@@ -1,0 +1,223 @@
+.container {
+  width: 100%;
+}
+
+.shift-container {
+  width: 1024px;
+  margin: auto;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+
+.top-content {
+  margin: auto;
+  text-align: center;
+}
+.second-content {
+  width: 650px;
+  height: 280px;
+  padding: 20px;
+  display:inline-block
+}
+
+.shift-table {
+  width: 650px;
+  color: #999999;
+  background: #F5F5F5;
+  border-collapse: collapse;
+  border: 0px;
+  margin: 0px;
+}
+
+.shift-table-head {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.shift-table-head h1 {
+  font-size: 32px;
+  color: #707070;
+  font-family: ヒラギノ丸ゴ Pro;
+}
+
+.shift-table th {
+  width: 56px;
+  border: solid 0.2px #999999;
+  opacity: 0.8;
+}
+
+.shift-table tr {
+  height: 32px;
+  border: solid 0.2px #999999;
+}
+
+.shift-table thead {
+  background: #fff;
+}
+
+.shift-table .period {
+  width: 80px;
+  padding-left: 4px;
+  background: #fff;
+}
+
+.mask {
+  width: 537px;
+  height: 191px;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: -232px;
+  bottom: 0;
+  right: 0;
+  left: 112px;
+  color: #fff;
+  text-align: center;
+  z-index: 10;
+}
+
+.mask h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: lighter;
+  padding-top: 54px;
+}
+
+.possible {
+  color: #FF5A5A;
+}
+
+.Sat {
+  color: #65A8FF;
+}
+
+.Sun {
+  color: #FF7575;
+}
+
+
+#today{
+  background: rgba(137,209,34, 0.5);
+}
+
+thead .week-info {
+  height: 42px;
+  font-size: 24px;
+  font-family: ヒラギノ丸ゴ Pro;
+  background: #0BA1DD;
+  border: solid 1px #0BA1DD;
+  color: #fff;
+}
+
+.week-info th {
+    border: none;
+}
+
+.previous-week a, .next-week a {
+  color: #fff;
+}
+
+.shift-table-foot {
+  width: 550px;
+  text-align: left;
+}
+.shift-table-foot img{
+  padding-top: 8px;
+}
+
+.thisweek-a-tag {
+  margin-left: 235px;
+  border-bottom: solid 1px #0BA1DD;
+}
+
+
+.third-content {
+  padding-top: 103px;
+  width: 300px;
+  float: right;
+  display:inline-block
+}
+
+.table-foot {
+  padding: 10px;
+  width: 160px;
+  margin: 0px;
+  text-align: center;
+  margin: auto;
+}
+
+.reset {
+  width: 100px;
+  height: 24px;
+  margin-right: 0px;
+  float: left;
+  padding: 8px 5px;
+}
+
+.reset-btn {
+  width: 90px;;
+  border: solid 1px #0BA1DD;
+  background: #0BA1DD;
+  color: #fff;
+  border-radius: 5px;
+  font-family: ヒラギノ丸ゴ Pro;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 140px;
+  height: 28px;
+  background: #89D122;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: ヒラギノ丸ゴ Pro;
+  margin: auto;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.5;
+}
+
+label, input[type='checkbox'] {
+    cursor: pointer;
+}
+
+tbody label {
+  padding: 2px 30px;
+}
+
+label:hover {
+  opacity: 0.6;
+}
+
+.period-checkbox, .day-checkbox, .all-checkbox {
+  display: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.period label{
+  padding: 2px 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.all-checkbox[type="checkbox"]:checked + .none{
+  display:block;
+}
+
+.all-checkbox[type="checkbox"]:checked + .all{
+  display: none;
+}
+
+.all, .none{
+  font-size: 14px;
+  font-weight: lighter;
+}

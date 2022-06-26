@@ -1,0 +1,128 @@
+.teachers-page {
+    padding-top: 56px;
+    background-color:#0BA1DD ;
+}
+.teachers-top {
+    width: 100%;
+    padding-top: 60px;
+}
+.tttop {
+    font-size: 126px;
+    color: white;
+}
+.teachers-top-img {
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.teachers-top-img img {
+    width: 100%;
+}
+.teacher-top-txt {
+    text-align: center;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+    color:#FFFFFF ;
+}
+
+.bottom-top{
+    border-radius: 5px 5px 0 0;
+    padding-top: 50px;
+    width: 85%;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    height: 50px;
+}
+.bottom-top h2 {
+    /* padding-left: 30px; */
+}
+.fa-chalkboard-teacher {
+    color: #999999;
+    font-size: xx-large;
+}
+
+
+.bottom-main {
+    padding-bottom: 69px;
+    padding-top: 47px;
+    width: 85%;
+    /* max-width: 1280px; */
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+
+}
+
+.t-main {
+    padding: 1em;
+    padding-top: 9px;
+    width: 77vw;
+    display: flex;
+    /* background-color: aqua; */
+}
+.t-img {
+    width: 49vw;
+    height: 33vw;
+    /* background-color: brown; */
+    position:relative;
+    overflow:hidden;
+}
+.t-img img {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.t-name {
+    padding-top: 0.5em;
+    padding-left: 19px;
+    /* text-align: center; */
+    width: 100%;
+    height: 30vw;
+    /* background-color: chartreuse; */
+}
+.t-name h2 {
+    font-size: 6.6vw;
+}
+.t-name h3 {
+    font-size: 3.2vw;
+}
+
+.t-fav {
+    position: relative;
+    margin: 1.2em 0;
+    padding: 0.5em 1em;
+    border: solid 2px #0BA1DD;
+    border-radius: 8px;
+}
+.t-fav .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 16px;
+    background: #FFF;
+    color: #0BA1DD;
+    font-weight: bold;
+}
+.t-fav p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.tttop {
+    font-size: 112px;
+    color: white;
+}

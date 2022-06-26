@@ -1,0 +1,186 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:300;
+    width:100%;
+    color:#999999;
+}
+
+a {
+    text-decoration: none;
+  }
+
+/* ヘッダー */
+header {
+    width:100%;
+    height: 56px;
+    /* background-color:red; */
+    margin-top: 5px;
+}
+h3 {
+    font-size: 16px;
+    color:#999999;
+}
+.fas {
+    color: white;
+}
+
+
+.logo {
+    padding: 5px 9px;
+    width: 156px;
+    height: 46px;
+    float:left;
+/* background: transparent url('img/logo_color.png') 0% 0% no-repeat padding-box; */
+/* opacity: 1; */
+}
+
+.header-list li {
+    width:100px;
+    text-align: center;
+    float: right;
+    padding: 16px 20px;
+    list-style-type:none;
+    /* background-color:#0BA1DD; */
+    color:gray;
+    opacity:1;
+    
+  }
+.login {
+    background-color:#0BA1DD;
+}
+
+
+/* ログインページ */
+
+.login-page-main {
+    width:100%;
+    height:664px;
+    background-color:#0BA1DD;
+  
+}
+.login-page-img {
+    width:240px;
+    margin:0 auto;
+    /* background-color: crimson; */
+    padding-top: 88px;
+}
+.login-page-img img {
+    width:100%;
+}
+
+.login-form {
+    background-color:#F5F5F5;
+    width: 336px;
+    height: 304px;
+    margin:0 auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    margin-top:60px;
+}
+
+
+
+.un {
+    width:240px;
+    height:32px;
+    color: rgb(38, 50, 56);
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-bottom: 27px;
+}
+
+.form {
+    padding-top: 40px;
+    /* background-color: crimson; */
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.pass {
+    width:240px;
+    height:32px;
+    color: rgb(38, 50, 56);
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 25px;
+    margin-bottom: 27px;
+}
+
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+    display: inline-block;
+    width: 240px;
+    height:32px;
+    cursor: pointer;
+    border-radius:5px;
+    color: #fff;
+    background: linear-gradient(to right,#89D122,#84db0b);
+    border: 0;
+    line-height: 32px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    /* padding-top: 5px; */
+    padding-right:48px;
+    text-align: right;
+}
+.sign-up {
+    margin-top:20px ;
+    display: inline-block;
+    width: 240px;
+    height:32px;
+    cursor: pointer;
+    border-radius:5px;
+    color: #fff;
+    background-color:#0BA1DD;
+    border: 0;
+    line-height: 32px;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color:#0BA1DD;
+    text-decoration: none;
+    font-size:10px;
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+
+    
+    
+

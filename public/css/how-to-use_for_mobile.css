@@ -1,0 +1,102 @@
+main {
+    /* padding-top: 50px; */
+}
+
+
+
+
+
+.second-wrapper {
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #fff;
+    height: 400px;
+}
+.second-top {
+    padding-top: 20px;
+}
+.second-container {
+    padding-top: 30px;
+    /* background-color: teal; */
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lessons {
+    padding-left: 30px;
+    width: 30%;
+    text-align: center;
+    padding-top: 15px;
+    flex-grow: 1;
+}
+
+.circle {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background: #0ba1dd;
+
+    text-align: center;
+    margin: 10px auto;
+}
+
+.camera {
+    padding: 0px 12px 40px 12px;
+    text-align: center;
+}
+.camera img {
+    width: 50px;
+    position: relative;
+    bottom: 2px;
+}
+.chatuser {
+    padding: 0px 12px 35px 12px;
+}
+.chatuser img {
+    width: 60px;
+    position: relative;
+    bottom: 4px;
+}
+.chat {
+    padding: 0px 10px 80px 15px;
+}
+.chat img {
+    width: 60px;
+    position: relative;
+    bottom: 8px;
+}
+.txt-contents {
+    padding-top: 3px;
+    color: #0ba1dd;
+}
+
+
+/* youtube */
+
+.youtube {
+    background-color: white;
+    width: 100%;
+    /* background-color: tomato; */
+}
+.youtube-area h1 {
+    text-align: center;
+}
+.youtube-link {
+    text-align: center;
+    /* background-color: teal; */
+    width: 100%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+iframe {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height:394px
+}

@@ -1,0 +1,337 @@
+/* * {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight:300;
+    width:100%;
+    color:#999999;
+}
+
+
+/* ヘッダー */
+header {
+    width:100%;
+    height: 56px;
+    /* background-color:red; */
+    margin-top: 5px;
+}
+h3 {
+    font-size: 16px;
+    color:#999999;
+} */
+.fas {
+    color: white;
+}
+
+
+@media screen and (min-width:1024px) {
+
+  .logo {
+      padding: 5px 9px;
+      width: 156px;
+      height: 46px;
+      float:left;
+  /* background: transparent url('img/logo_color.png') 0% 0% no-repeat padding-box; */
+  /* opacity: 1; */
+  }
+
+  .header-list li {
+      width:100px;
+      text-align: center;
+      float: right;
+      padding: 16px 20px;
+      list-style-type:none;
+      /* background-color:#0BA1DD; */
+      color:gray;
+      opacity:1;
+
+    }
+  .login {
+      background-color:#0BA1DD;
+  }
+
+
+  /* ログインページ */
+
+  .sign-up-page-main {
+      width:100%;
+      height:720px;
+      background-color:#0BA1DD;
+
+  }
+  .login-page-img {
+      width:240px;
+      margin:0 auto;
+      /* background-color: crimson; */
+      padding-top: 88px;
+  }
+  .login-page-img img {
+      width:100%;
+  }
+  .signup-top {
+      width:100%;
+      height:40px;
+      padding-top:18px;
+      text-align: center;
+      color: #0BA1DD;
+  }
+  .signup-contents-top {
+      width:100%;
+      height:40px;
+      text-align: left;
+      letter-spacing:0px;
+      font-size: 11px;
+      margin-left: 50px;
+  }
+
+  .signup-form {
+      background-color:#F5F5F5;
+      width: 592px;
+      height: 520px;
+      margin:0 auto;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+      margin-top:10px;
+  }
+
+  .signup-contents {
+      height:300px;
+      width:30%;
+      /* background-color: chartreuse; */
+      float: left;
+      text-align:left;
+      padding-left: 56px;
+      padding-top: 38px;
+  }
+  .signup-contents p {
+      line-height: 32px;
+      margin-bottom: 50px;
+      margin-bottom: 27px;
+
+  }
+
+
+
+  input {
+      width:304px;
+      height:32px;
+      color: rgb(38, 50, 56);
+      font-size: 17px;
+      letter-spacing: 1px;
+      background: rgba(136, 126, 126, 0.04);
+      padding-left: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      box-sizing: border-box;
+      border: 2px solid rgba(0, 0, 0, 0.02);
+      margin-bottom: 50px;
+      margin-bottom: 27px;
+      display:block;
+  }
+
+  .form {
+      padding-top: 40px;
+      /* background-color: crimson; */
+      text-align: center;
+      /* margin: 0 auto;
+      */
+      width: 60%;
+      height:300px;
+      /* background-color: aqua; */
+      float: right;
+  }
+
+
+  .un:focus, .pass:focus {
+      /* border: 2px solid rgba(0, 0, 0, 0.18) !important; */
+
+  }
+  .signup-bottun {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      clear: both;
+      width: 100%;
+      /* background-color: blue; */
+      text-align: center;
+  }
+  .sign-up {
+
+      margin-top:20px ;
+      display: inline-block;
+      width: 240px;
+      height:32px;
+      cursor: pointer;
+      border-radius:5px;
+      color: #fff;
+      background-color:#89D122;
+      border: 0;
+      line-height: 32px;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+      margin: 0 auto;
+  }
+  a {
+      text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+      color:#0BA1DD;
+      text-decoration: none;
+      font-size:10px;
+  }
+  span {
+      color:#FF0000;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+
+  .logo {
+    display: none;
+  }
+
+  .header-list li {
+      width:100px;
+      text-align: center;
+      float: right;
+      padding: 16px 20px;
+      list-style-type:none;
+      /* background-color:#0BA1DD; */
+      color:gray;
+      opacity:1;
+
+    }
+
+  .login {
+      background-color:#0BA1DD;
+  }
+
+  /* ログインページ */
+
+  .sign-up-page-main {
+      width:100%;
+      height:720px;
+      background-color:#fff;
+
+  }
+  .login-page-img {
+      display: none;
+  }
+  .login-page-img img {
+      width:100%;
+  }
+  .signup-top {
+      width:100%;
+      height:40px;
+      padding-top:18px;
+      text-align: center;
+      color: #0BA1DD;
+  }
+  .signup-contents-top {
+      width:100%;
+      height:40px;
+      text-align: left;
+      letter-spacing:0px;
+      font-size: 11px;
+      margin-left: 50px;
+  }
+
+  .signup-form {
+      background-color:#F5F5F5;
+      width: 592px;
+      height: 520px;
+      margin:0 auto;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+      margin-top:10px;
+  }
+
+  .signup-contents {
+      height:300px;
+      width:30%;
+      /* background-color: chartreuse; */
+      float: left;
+      text-align:left;
+      padding-left: 56px;
+      padding-top: 38px;
+  }
+  .signup-contents p {
+      line-height: 32px;
+      margin-bottom: 50px;
+      margin-bottom: 27px;
+
+  }
+
+
+
+  input {
+      width:304px;
+      height:32px;
+      color: rgb(38, 50, 56);
+      font-size: 17px;
+      letter-spacing: 1px;
+      background: rgba(136, 126, 126, 0.04);
+      padding-left: 10px;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      box-sizing: border-box;
+      border: 2px solid rgba(0, 0, 0, 0.02);
+      margin-bottom: 50px;
+      margin-bottom: 27px;
+      display:block;
+  }
+
+  .form {
+      padding-top: 40px;
+      /* background-color: crimson; */
+      text-align: center;
+      /* margin: 0 auto;
+      */
+      width: 60%;
+      height:300px;
+      /* background-color: aqua; */
+      float: right;
+  }
+
+
+  .un:focus, .pass:focus {
+      /* border: 2px solid rgba(0, 0, 0, 0.18) !important; */
+
+  }
+  .signup-bottun {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      clear: both;
+      width: 100%;
+      /* background-color: blue; */
+      text-align: center;
+  }
+  .sign-up {
+
+      margin-top:20px ;
+      display: inline-block;
+      width: 240px;
+      height:32px;
+      cursor: pointer;
+      border-radius:5px;
+      color: #fff;
+      background-color:#89D122;
+      border: 0;
+      line-height: 32px;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+      margin: 0 auto;
+  }
+  a {
+      text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+      color:#0BA1DD;
+      text-decoration: none;
+      font-size:10px;
+  }
+  span {
+      color:#FF0000;
+  }
+}

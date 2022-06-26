@@ -1,0 +1,216 @@
+/* common */
+
+.btn-primary {
+    width: 240px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0ba1dd;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.line-login-btn {
+    width: 240px;
+    height: 32px;
+    margin: 10px auto;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 14px;
+    background: #00c300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-login a {
+    color: #fff;
+}
+
+.line-login i {
+    width: 30px;
+    color: #fff;
+}
+
+.form-check {
+    padding: 5px 0;
+}
+
+/* モバイル用（後で）消すことになるかも */
+.form-check-label {
+    color: #999999;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 480px) {
+    /* for pc & for ipad */
+
+    .container {
+        margin: auto;
+        background: #0ba1dd;
+        height: 100vh;
+    }
+
+    .login-container {
+        width: calc(100% - 160px);
+        margin: auto;
+        padding: 80px;
+        text-align: center;
+    }
+
+    .login-form-content {
+        background-color: #f5f5f5;
+        width: 336px;
+        height: 334px;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        margin-top: 60px;
+    }
+
+    form {
+        padding-top: 15px;
+    }
+
+    .mail-content {
+        width: 250px;
+        height: 40px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .password-content {
+        width: 250px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .login-container .input-form {
+        width: 240px;
+        height: 32px;
+        color: rgb(38, 50, 56);
+        font-size: 17px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-bottom: 27px;
+    }
+    .login-btn {
+        width: 240px;
+        height: 32px;
+        border-radius: 5px;
+        border: none;
+        background-color: #89d122;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+        background: #0ba1dd;
+    }
+
+    /* ログインフォーム
+    -----------------  */
+
+    .login-container {
+        width: 100%;
+        margin: auto;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .logo-content {
+        display: none;
+    }
+
+    .login-form-content {
+        background-color: #f5f5f5;
+        width: 90%;
+        height: 370px;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+        margin-top: 80px;
+    }
+
+    form {
+        padding-top: 30px;
+    }
+
+    .mail-content {
+        /* width: 90%; */
+        height: 40px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .password-content {
+        /* width: 250px; */
+        height: 40px;
+        margin: auto;
+        /* padding: 20px; */
+    }
+
+    .login-container .input-form {
+        width: 280px;
+        height: 32px;
+        color: rgb(38, 50, 56);
+        font-size: 17px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-bottom: 27px;
+    }
+
+    .login-btn {
+        width: 240px;
+        height: 32px;
+        border-radius: 5px;
+        border: none;
+        background-color: #89d122;
+        color: white;
+    }
+
+    .btn-txt {
+        color: #fff;
+        font-family: ヒラギノ丸ゴ Pro;
+        font-size: 14px;
+    }
+
+    .etc-login {
+        width: 240px;
+        height: 32px;
+        color: #fff;
+        margin: 10px auto;
+        border: none;
+        border-radius: 5px;
+        font-family: ヒラギノ丸ゴ Pro;
+        font-size: 14px;
+        background: #707070;
+    }
+}

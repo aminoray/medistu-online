@@ -1,0 +1,24 @@
+.pp-top {
+    margin-top: 48px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #0BA1DD;
+    color: white;
+    height: 24vh;
+
+}
+.pp-top h3 {
+    color: white;
+    padding-top: 52px;
+}
+.pp-main {
+    height: 70vh;
+    padding-top: 70px;
+    width: 100%;
+    text-align: center;
+    background-color: #0BA1DD;
+}
+.pp-main img {
+    width: 98%;
+}

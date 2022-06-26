@@ -1,0 +1,245 @@
+main {
+    padding-top: 30px;
+    background-color:  white;
+    padding-bottom: 40px;
+}
+
+
+
+.top {
+    display: none;
+    text-align: center;
+}
+.top-mov {
+    /* display: none; */
+    text-align: center;
+}
+.top-img {
+    width: 300px;
+    margin: 0 auto;
+}
+.top-mov-img {
+    max-width: 300px;
+    width: 70%;
+    margin: 0 auto;
+}
+.top-mov-img img {
+    width: 100%;
+}
+.top-index {
+    padding-top: 33px;
+    color: #0ba1dd;
+    width: 300px;
+    height: 82px;
+    background-color: white;
+    margin:  0 auto;
+    margin-top: 20px;
+}
+.index-numbers {
+    padding-top: 29px;
+    width: 100%;
+    padding-left: 0px;
+    height: 20px;
+    display: flex;
+    margin: 0 auto;
+}
+.n1 {
+    display: block;
+    width: 30px;
+    padding-left: 3px;
+}
+.n2{
+    display: block;
+    width: 30px;
+    padding-left: 64px;
+}
+.n3{
+    display: block;
+    width: 30px;
+    padding-left: 63px;
+}
+.index-img {
+    font-size: 21px;
+
+    color: white;
+    line-height: 45px;
+    display: flex;
+    background-image: url(/img/takenoko.png);
+    background-size: contain;
+    width: 267px;
+    height: 46px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.t1,.t2.t3 {
+    /* width: 33px; */
+}
+.t1 {
+    padding-left: 23px;
+}
+.t2 {
+    padding-left: 40px;
+}
+.t3 {
+    padding-left: 33px;
+}
+.index-img img {
+    width: 100%;
+}
+.index-bottom {
+    color: #999999;
+    width: 100%;
+    margin: 0 auto;
+}
+.step-1{
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: 30px;
+}
+.step-1-top {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 33px;
+    display: flex;
+    justify-content: left;
+
+}
+.step-1-top img {
+    padding-top: 13px;
+    padding-right: 5px;
+    width: 51px;
+    height: fit-content;
+    padding-left: 38px;
+}
+.step-1-top p {
+    color: #0ba1dd;
+    font-size: 28px;
+}
+
+.column {
+    /* display: flex; */
+    width: 100%;
+    background-color: white;
+    padding-top: 32px;
+}
+.column-img {
+    text-align: center;
+    width: 100%;
+}
+.column-img img {
+    width: 86%;
+    height: auto;
+}
+.column-text {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    color: #0ba1dd;
+}
+.column-text p {
+    font-size: 20px;
+    padding-right: 10px;
+}
+.step-2 {
+    background-color: #0ba1dd;
+    /* color: whitesmoke; */
+    width: 100%;
+    margin: 0 auto;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    padding-top: 32px;
+    padding-bottom: 50px;
+}
+
+.step-2-top p {
+    color: whitesmoke;
+    font-size: 28px;
+}
+.step-2-top {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 33px;
+    display: flex;
+    justify-content: left;
+
+}
+.step-2-top img {
+    padding-top: 13px;
+    padding-right: 5px;
+    width: 51px;
+    height: fit-content;
+    padding-left: 38px;
+}
+.column-2 {
+    /* display: flex; */
+    width: 100%;
+    background-color: #0ba1dd;
+    padding-top: 32px;
+}
+.column-2-img {
+    text-align: center;
+    width: 100%;
+}
+.column-2-img img {
+    width: 86%;
+    height: auto;
+}
+.column-2-text {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+.column-2-text p {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.step3-bottom2{
+    text-align: center;
+    margin:  0 auto;
+    width: 264px;
+    height: 80px;
+    border: solid 1.5px white;
+    margin-top: 100px;
+}
+.step3-bottom2 p {
+    color: white;
+    line-height: 40px;
+    /* padding-top: 20px; */
+
+}
+.bottom-btn{
+    width: 250px;
+    height: 60px;
+    margin:  0 auto;
+    padding-top: 21px;
+
+}
+
+.bottom-btn a {
+    line-height: 40px;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    height: 40px;
+    background-color: #0ba1dd;
+    border: none;
+    color: whitesmoke;
+
+    
+}
+.yajirusi {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 40px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}

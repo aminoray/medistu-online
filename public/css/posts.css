@@ -1,0 +1,2178 @@
+/* index */
+
+@media screen and (min-width:1024px) {
+  .container {
+    width: 100%;
+    display: flex;
+    background: #0BA1DD;
+  }
+
+  /* パンくずリスト
+  --------------------- */
+  .breadcrumbs {
+    margin-bottom: 5px;
+  }
+  .bread {
+    list-style: none;
+    overflow: hidden;
+    padding: 5px 0px;;
+  }
+
+  .bread li {
+    float: left;
+    line-height: 32px;
+  }
+
+  .bread li a {
+    display: block;
+    float: left;
+    padding: 0px 10px 0px 24px;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    background: #fff;
+    color: #0BA1DD;
+    border-top: 1px solid #0BA1DD;
+    border-bottom: 1px solid #0BA1DD;
+  }
+
+  .bread li a::before {
+    display: block;
+    width: 18px;
+    height: 16px;
+    border-right: 2px solid #0BA1DD;
+    margin: 0 -20px -16px auto;
+    background: #fff;
+    content: " ";
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    transform: skew(45deg);
+  }
+
+  .bread li a::after {
+    display: block;
+    width: 18px;
+    height: 16px;
+    border-right: 2px solid #0BA1DD;
+    margin: -16px -20px 0 auto;
+    background: #fff;
+    content: "";
+    -webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    transform: skew(-45deg);
+  }
+
+  .bread li.current a {
+    color: #fff;
+    background: #0BA1DD;
+    border: 1px solid #fff;
+    /* padding: 0px 10px 0px 20px; */
+  }
+
+  .bread li.current a::before, .bread li.current a::after {
+    background: #0BA1DD;
+    border-right: 2px solid #fff;
+  }
+
+  /* 投稿一覧のスタイリング
+  --------------------- */
+  .posts-index {
+    padding-top: 56px;
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .posts-index .content-top {
+    padding: 30px;
+  }
+  .c-t-img img {
+    width: 103px;
+  }
+
+  .posts-index .content-top h1 {
+    color: #fff;
+    font-size: 32px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+
+  .posts-index .content-second {
+    padding: 30px;
+  }
+
+  .posts-index .grade-btn {
+    width: 112px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    color: #0BA1DD;
+    border: 0;
+    font-size: 20px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+
+
+  .posts-index .content-third {
+    width: 872px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+
+  }
+
+
+  .posts-index .content-fourth {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+  .posts-index .content-fourth h3 {
+    font: W4 20px/30px Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+
+  .subject-tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px 0;
+  }
+  .subject-tab-wrap:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    display: block;
+  }
+  .subject-tab-label {
+    background: #F5F5F5;
+    font: Regular 16px/24px Noto Sans JP;
+    /* white-space: nowrap; */
+    text-align: center;
+    padding: 4px .5em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    width: 100px;
+    opacity: 0.9;
+  }
+  .subject-tab-label:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  .subject-tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /* アクティブなタブ */
+  .subject-tab-switch:checked+.subject-tab-label {
+    background: #FFFFFF;
+    opacity: 1;
+  }
+  .subject-tab-switch:checked+.subject-tab-label+.subject-tab-content {
+    height: 548px;
+    overflow: auto;
+    opacity: 1;
+    transition: .5s opacity;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+  }
+  /* ラジオボタン非表示 */
+  .subject-tab-switch {
+    display: none;
+  }
+
+  .japanese {
+    color: #FF7575;
+  }
+
+  .math {
+    color: #65A8FF;
+  }
+
+  .science {
+    color: #F09EFF;
+  }
+
+  .social {
+    color: #40E67D;
+  }
+
+  .english {
+    color: #FFBD24;
+  }
+
+  .etc {
+    color: #999999;
+  }
+
+  .subject-tab-content {
+    background: #fff;
+    border: 0;
+    padding: 0;
+  }
+
+
+  .subject-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .subject-table th {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .subject-table tbody tr:nth-child(odd){
+    background-color: #F5F5F5
+  }
+
+  .subject-table thead tr {
+    background: #fff;
+    border-style: solid;
+    border-bottom-color: #999999;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+  }
+
+  .subject-table .icon {
+    padding-left: 24px;
+  }
+
+  .subject-table .name {
+    width: 150px;
+    padding-left: 24px;
+  }
+
+  .subject-table .title {
+    width: 320px;
+    padding-left: 34px;
+  }
+
+  .subject-table .date {
+    width: 188px;
+  }
+
+  .subject-table .comments {
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .subject-table .title p {
+    font: W4 16px/24px Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #0BA1DD;
+    opacity: 1;
+    font-weight:lighter;
+  }
+
+  .subject-table .date p {
+    text-align: left;
+    font: W4 16px/24px Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #999999;
+    opacity: 1;
+    font-weight:lighter;
+  }
+
+  .to-top {
+    display: none;
+  }
+
+  /* 質問投稿１ページ目スタイリング
+  --------------------------- */
+  .posts-create-container {
+    text-align: center;
+    width: 656px;;
+    height: auto;
+    margin: auto;
+  }
+
+  .posts-create-container .top-content {
+    padding: 55px 20px 20px 20px;
+  }
+
+  .posts-create-container .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+  }
+
+  .posts-create-container .top-content img {
+    width: 147px;
+    height: 80px;
+  }
+
+  .posts-create-container .second-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    margin-bottom: 200px;
+  }
+
+  .posts-create-container .description {
+    text-align: center;
+    margin:auto;
+    padding: 28px;
+  }
+
+  .description-head {
+    font-size: 16px;
+    font-family: Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #0BA1DD;
+    font-weight: lighter;
+  }
+
+  .description-text01, .description-text02 {
+    width: 542px;
+    font-family: ヒラギノ丸ゴ Pro;
+    color: #999999;
+    font-weight: lighter;
+    text-align: left;
+    margin: auto;
+    padding: 4px;
+  }
+
+  .description-text01 {
+    font-size: 14px;
+  }
+
+  .description-text02 {
+    font-size: 11px;
+  }
+
+  .input-form {
+    padding: 32px 0px;
+    text-align: left;
+  }
+
+  .input-form .section {
+    width: 524px;
+    padding: 12px;
+    text-align: left;
+    padding-left: 66px;
+  }
+
+  .input-form input {
+    width: 424px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #707070;
+  }
+
+  .input-form textarea {
+    width: 424px;
+    height: 144px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .input-form label {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  #next-btn {
+    width: 240px;
+    height: 32px;
+    background: #0BA1DD;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 0px 31.7%;
+  }
+
+
+  /* 講師選択フォーム　スタイリング
+  -------------------------- */
+  .teacher-select-container {
+    text-align: center;
+    width: 656px;
+    height:　auto;
+    margin: auto;
+  }
+
+  .teacher-select-container .top-content {
+    padding: 55px 20px 20px 20px;
+  }
+
+  .teacher-select-container .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+  }
+
+  .teacher-select-container .top-content img {
+    width: 147px;
+    height: 80px;
+  }
+
+
+  .teacher-select-container .second-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    padding: 30px 0;
+    margin-bottom: 200px;
+  }
+
+  .none-select {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+    text-align: left;
+    /* margin: 0 20px; */
+  }
+
+  .none-select h3 {
+    width: 70%;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: ヒラギノ丸ゴ Pro;
+    display: inline-block;
+    color: #FF5A5A;
+  }
+
+  .none-select form {
+    width: 90px;
+    margin: 0;
+    display: inline-block;
+    padding-left: 62px;
+  }
+
+  .teacher-select-table {
+    width: 656px;
+    background: #F5F5F5;
+  }
+
+  .teacher-select-table img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+    padding: 0;
+  }
+
+
+  .teacher-select-table .select input, .none-select input {
+    width: 80px;
+    height: 32px;
+    color: #fff;
+    background: #0BA1DD 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+  }
+
+  .teacher-select-table .detail input {
+    color: #0BA1DD;
+    background: #fff;
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    opacity: 1;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+    border: solid 1px #0BA1DD;
+  }
+
+
+
+  /* 時間選択フォーム　スタイリング
+  -------------------------- */
+
+  .date-select-container {
+    text-align: center;
+    width: 656px;
+    height:　auto;
+    margin: auto;
+  }
+
+  .date-select-container .top-content {
+    padding: 55px 20px 20px 20px;
+  }
+
+  .date-select-container .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+  }
+
+  .date-select-container .top-content img {
+    width: 147px;
+    height: 80px;
+  }
+
+  .date-select-container .second-container {
+    margin: 10px 0;
+  }
+
+  .second-container .teacher-icon {
+    width: 108px;
+    height: 108px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    background: #fff;
+    display: inline-block;
+  }
+
+  .teacher-icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 4px;
+  }
+
+  .second-container .teacher-info {
+    width: 400px;
+    display: inline-block;
+  }
+
+  .second-container .teacher-info h3 {
+    color: #fff;
+    font-size: 38px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+  .second-container .teacher-info p {
+    color: #fff;
+  }
+
+  .date-select-container .third-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    padding: 30px 0;
+    margin-bottom: 200px;
+  }
+
+
+  .date-select-table {
+    width: 100%;
+    color: #999999;
+    background: #F5F5F5;
+    border-collapse: collapse;
+    border: 0px;
+    margin: 0px;
+  }
+
+  .date-select-table-head a {
+    padding: 0px 20px;
+    color: #999;
+  }
+
+  .date-select-table th {
+    width: 60px;
+    border: solid 0.2px #999999;
+    opacity: 0.8;
+  }
+
+  .date-select-table tr {
+    height: 20px;
+    border: solid 0.2px #999999;
+  }
+
+  .date-select-table thead {
+    background: #fff;
+  }
+
+  .date-select-table .time {
+    width: 80px;
+    padding-left: 4px;
+    background: #fff;
+  }
+
+  .possible {
+    color: #FF5A5A;
+  }
+
+  .Sat {
+    color: #65A8FF;
+  }
+
+  .Sun {
+    color: #FF7575;
+  }
+
+
+  #today{
+    background: rgba(137,209,34, 0.5);
+  }
+
+  thead .week-info {
+    height: 42px;
+    font-size: 24px;
+    font-family: ヒラギノ丸ゴ Pro;
+    background: #0BA1DD;
+    border: solid 1px #0BA1DD;
+    color: #fff;
+  }
+
+  .week-info th {
+      border: none;
+  }
+
+  .previous-week a, .next-week a {
+    color: #fff;
+  }
+
+  .date-select-table-foot {
+    width: 550px;
+    text-align: center;
+  }
+  .date-select-table-foot a{
+    color: #999;
+    font-size: 24px;
+  }
+
+  .date-select-table button {
+    width: 30px;
+    height: 24px;
+    color: red;
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+  }
+
+
+  /* ここから */
+  .tab-wrap {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .tab-label {
+      color: White;
+      background: LightGray;
+      margin-right: 5px;
+      padding: 3px 12px;
+      order:-1;
+  }
+  .tab-content {
+      width: 100%;
+      display: none;
+  }
+  .tab-switch:checked+.tab-label {
+      background: DeepSkyBlue;
+  }
+  .tab-switch:checked+.tab-label+.tab-content {
+      display: block;
+  }
+  .tab-switch {
+      display: none;
+  }
+
+  /**
+   * FilePond Custom Styles
+   */
+  .filepond--drop-label {
+  	color: #4c4e53;
+  }
+
+  .filepond--label-action {
+  	text-decoration-color: #babdc0;
+  }
+
+  .filepond--panel-root {
+  	border-radius: 2em;
+  	background-color: #edf0f4;
+  	height: 1em;
+  }
+
+  .filepond--item-panel {
+  	background-color: #595e68;
+  }
+
+  .filepond--drip-blob {
+  	background-color: #7f8a9a;
+  }
+
+}
+
+@media screen and (min-width:481px) and (max-width:1023px){
+  .container {
+    width: 100%;
+    display: flex;
+    background: #0BA1DD;
+  }
+
+  /* パンくずリスト
+  --------------------- */
+  .breadcrumbs {
+    margin-bottom: 5px;
+  }
+  .bread {
+    list-style: none;
+    overflow: hidden;
+    padding: 5px 0px;;
+  }
+
+  .bread li {
+    float: left;
+    line-height: 32px;
+  }
+
+  .bread li a {
+    display: block;
+    float: left;
+    padding: 0px 10px 0px 24px;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    background: #fff;
+    color: #0BA1DD;
+    border-top: 1px solid #0BA1DD;
+    border-bottom: 1px solid #0BA1DD;
+  }
+
+  .bread li a::before {
+    display: block;
+    width: 18px;
+    height: 16px;
+    border-right: 2px solid #0BA1DD;
+    margin: 0 -20px -16px auto;
+    background: #fff;
+    content: " ";
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    transform: skew(45deg);
+  }
+
+  .bread li a::after {
+    display: block;
+    width: 18px;
+    height: 16px;
+    border-right: 2px solid #0BA1DD;
+    margin: -16px -20px 0 auto;
+    background: #fff;
+    content: "";
+    -webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    transform: skew(-45deg);
+  }
+
+  .bread li.current a {
+    color: #fff;
+    background: #0BA1DD;
+    border: 1px solid #fff;
+    /* padding: 0px 10px 0px 20px; */
+  }
+
+  .bread li.current a::before, .bread li.current a::after {
+    background: #0BA1DD;
+    border-right: 2px solid #fff;
+  }
+
+  /* 投稿一覧のスタイリング
+  --------------------- */
+  .posts-index {
+    padding-top: 34px;
+    padding-bottom:100px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .posts-index .content-top {
+    padding: 30px;
+  }
+
+
+  .c-t-img img {
+    width: 103px;
+  }
+
+  .posts-index .content-top h1 {
+    color: #fff;
+    font-size: 32px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+
+  .posts-index .content-second {
+    padding: 30px;
+  }
+
+  .posts-index .grade-btn {
+    width: 112px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    color: #0BA1DD;
+    border: 0;
+    font-size: 20px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+
+
+  .posts-index .content-third {
+    width: 95%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+
+  }
+
+
+  .posts-index .content-fourth {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: auto;
+  }
+  .posts-index .content-fourth h3 {
+    font: W4 20px/30px Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+
+  .subject-tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px 0;
+  }
+  .subject-tab-wrap:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    display: block;
+  }
+  .subject-tab-label {
+    background: #F5F5F5;
+    font: Regular 16px/24px Noto Sans JP;
+    /* white-space: nowrap; */
+    text-align: center;
+    padding: 4px .5em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    width: 57px;
+    opacity: 0.9;
+  }
+  .subject-tab-label:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  .subject-tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /* アクティブなタブ */
+  .subject-tab-switch:checked+.subject-tab-label {
+    background: #FFFFFF;
+    opacity: 1;
+  }
+  .subject-tab-switch:checked+.subject-tab-label+.subject-tab-content {
+    height: 548px;
+    overflow: auto;
+    opacity: 1;
+    transition: .5s opacity;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+  }
+  /* ラジオボタン非表示 */
+  .subject-tab-switch {
+    display: none;
+  }
+
+  .japanese {
+    color: #FF7575;
+  }
+
+  .math {
+    color: #65A8FF;
+  }
+
+  .science {
+    color: #F09EFF;
+  }
+
+  .social {
+    color: #40E67D;
+  }
+
+  .english {
+    color: #FFBD24;
+  }
+
+  .etc {
+    color: #999999;
+  }
+
+  .subject-tab-content {
+    background: #fff;
+    border: 0;
+    padding: 0;
+  }
+
+
+  .subject-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .subject-table th {
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .subject-table tbody tr:nth-child(odd){
+    background-color: #F5F5F5
+  }
+
+  .subject-table thead tr {
+    background: #fff;
+    border-style: solid;
+    border-bottom-color: #999999;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+  }
+
+  .subject-table .icon {
+    padding-left: 24px;
+  }
+
+  .subject-table .name {
+    width: 80px;
+    padding-left: 24px;
+  }
+
+  .subject-table .title {
+    width: 180px;
+    padding-left: 34px;
+  }
+
+  .subject-table .date {
+    width: 40px;
+  }
+
+  .subject-table .comments {
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .subject-table .title p {
+    font: W4 16px/24px Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #0BA1DD;
+    opacity: 1;
+    font-weight:lighter;
+  }
+
+  .subject-table .date p {
+    text-align: left;
+    font: W4 16px/24px Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #999999;
+    opacity: 1;
+    font-weight:lighter;
+  }
+
+  .to-top {
+    display: none;
+  }
+
+  /* 質問投稿１ページ目スタイリング
+  --------------------------- */
+  .posts-create-container {
+    text-align: center;
+    width: 656px;;
+    height: auto;
+    margin: auto;
+  }
+
+  .posts-create-container .top-content {
+    padding: 55px 20px 20px 20px;
+  }
+
+  .posts-create-container .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+  }
+
+  .posts-create-container .top-content img {
+    width: 147px;
+    height: 80px;
+  }
+
+  .posts-create-container .second-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    margin-bottom: 200px;
+  }
+
+  .posts-create-container .description {
+    text-align: center;
+    margin:auto;
+    padding: 28px;
+  }
+
+  .description-head {
+    font-size: 16px;
+    font-family: Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #0BA1DD;
+    font-weight: lighter;
+  }
+
+  .description-text01, .description-text02 {
+    width: 542px;
+    font-family: ヒラギノ丸ゴ Pro;
+    color: #999999;
+    font-weight: lighter;
+    text-align: left;
+    margin: auto;
+    padding: 4px;
+  }
+
+  .description-text01 {
+    font-size: 14px;
+  }
+
+  .description-text02 {
+    font-size: 11px;
+  }
+
+  .input-form {
+    padding: 32px 0px;
+    text-align: left;
+  }
+
+  .input-form .section {
+    width: 524px;
+    padding: 12px;
+    text-align: left;
+    padding-left: 66px;
+  }
+
+  .input-form input {
+    width: 424px;
+    height: 32px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #707070;
+  }
+
+  .input-form textarea {
+    width: 424px;
+    height: 144px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .input-form label {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  #next-btn {
+    width: 240px;
+    height: 32px;
+    background: #0BA1DD;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 0px 31.7%;
+  }
+
+
+  /* 講師選択フォーム　スタイリング
+  -------------------------- */
+  .teacher-select-container {
+    text-align: center;
+    width: 656px;
+    height:　auto;
+    margin: auto;
+  }
+
+  .teacher-select-container .top-content {
+    padding: 55px 20px 20px 20px;
+  }
+
+  .teacher-select-container .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+  }
+
+  .teacher-select-container .top-content img {
+    width: 147px;
+    height: 80px;
+  }
+
+
+  .teacher-select-container .second-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    padding: 30px 0;
+    margin-bottom: 200px;
+  }
+
+  .none-select {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+    text-align: left;
+    /* margin: 0 20px; */
+  }
+
+  .none-select h3 {
+    width: 70%;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: ヒラギノ丸ゴ Pro;
+    display: inline-block;
+    color: #FF5A5A;
+  }
+
+  .none-select form {
+    width: 90px;
+    margin: 0;
+    display: inline-block;
+    padding-left: 62px;
+  }
+
+  .teacher-select-table {
+    width: 656px;
+    background: #F5F5F5;
+  }
+
+  .teacher-select-table img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50px;
+    padding: 0;
+  }
+
+
+  .teacher-select-table .select input, .none-select input {
+    width: 80px;
+    height: 32px;
+    color: #fff;
+    background: #0BA1DD 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+  }
+
+  .teacher-select-table .detail input {
+    color: #0BA1DD;
+    background: #fff;
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    opacity: 1;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+    border: solid 1px #0BA1DD;
+  }
+
+
+
+  /* 時間選択フォーム　スタイリング
+  -------------------------- */
+
+  .date-select-container {
+    text-align: center;
+    width: 656px;
+    height:　auto;
+    margin: auto;
+  }
+
+  .date-select-container .top-content {
+    padding: 55px 20px 20px 20px;
+  }
+
+  .date-select-container .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 32px;
+  }
+
+  .date-select-container .top-content img {
+    width: 147px;
+    height: 80px;
+  }
+
+  .date-select-container .second-container {
+    margin: 10px 0;
+  }
+
+  .second-container .teacher-icon {
+    width: 108px;
+    height: 108px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    background: #fff;
+    display: inline-block;
+  }
+
+  .teacher-icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 4px;
+  }
+
+  .second-container .teacher-info {
+    width: 400px;
+    display: inline-block;
+  }
+
+  .second-container .teacher-info h3 {
+    color: #fff;
+    font-size: 38px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+  .second-container .teacher-info p {
+    color: #fff;
+  }
+
+  .date-select-container .third-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    padding: 30px 0;
+    margin-bottom: 200px;
+  }
+
+
+  .date-select-table {
+    width: 100%;
+    color: #999999;
+    background: #F5F5F5;
+    border-collapse: collapse;
+    border: 0px;
+    margin: 0px;
+  }
+
+  .date-select-table-head a {
+    padding: 0px 20px;
+    color: #999;
+  }
+
+  .date-select-table th {
+    width: 60px;
+    border: solid 0.2px #999999;
+    opacity: 0.8;
+  }
+
+  .date-select-table tr {
+    height: 20px;
+    border: solid 0.2px #999999;
+  }
+
+  .date-select-table thead {
+    background: #fff;
+  }
+
+  .date-select-table .time {
+    width: 80px;
+    padding-left: 4px;
+    background: #fff;
+  }
+
+  .possible {
+    color: #FF5A5A;
+  }
+
+  .Sat {
+    color: #65A8FF;
+  }
+
+  .Sun {
+    color: #FF7575;
+  }
+
+
+  #today{
+    background: rgba(137,209,34, 0.5);
+  }
+
+  thead .week-info {
+    height: 42px;
+    font-size: 24px;
+    font-family: ヒラギノ丸ゴ Pro;
+    background: #0BA1DD;
+    border: solid 1px #0BA1DD;
+    color: #fff;
+  }
+
+  .week-info th {
+      border: none;
+  }
+
+  .previous-week a, .next-week a {
+    color: #fff;
+  }
+
+  .date-select-table-foot {
+    width: 550px;
+    text-align: center;
+  }
+  .date-select-table-foot a{
+    color: #999;
+    font-size: 24px;
+  }
+
+  .date-select-table button {
+    width: 30px;
+    height: 24px;
+    color: red;
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+  }
+
+
+  /* ここから */
+  .tab-wrap {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .tab-label {
+      color: White;
+      background: LightGray;
+      margin-right: 5px;
+      padding: 3px 12px;
+      order:-1;
+  }
+  .tab-content {
+      width: 100%;
+      display: none;
+  }
+  .tab-switch:checked+.tab-label {
+      background: DeepSkyBlue;
+  }
+  .tab-switch:checked+.tab-label+.tab-content {
+      display: block;
+  }
+  .tab-switch {
+      display: none;
+  }
+
+  /**
+   * FilePond Custom Styles
+   */
+  .filepond--drop-label {
+  	color: #4c4e53;
+  }
+
+  .filepond--label-action {
+  	text-decoration-color: #babdc0;
+  }
+
+  .filepond--panel-root {
+  	border-radius: 2em;
+  	background-color: #edf0f4;
+  	height: 1em;
+  }
+
+  .filepond--item-panel {
+  	background-color: #595e68;
+  }
+
+  .filepond--drip-blob {
+  	background-color: #7f8a9a;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #f5f5f5;
+  }
+
+  /* パンくずリスト
+  --------------------- */
+  .breadcrumbs {
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+  .bread {
+    list-style: none;
+    overflow: hidden;
+    padding: 5px 0px;;
+  }
+
+  .bread li {
+    float: left;
+    line-height: 28px;
+  }
+
+  .bread li a {
+    display: block;
+    float: left;
+    padding: 0px 10px 0px 24px;
+    font-size: 12px;
+    font-family: ヒラギノ丸ゴ Pro;
+    background: #fff;
+    color: #0BA1DD;
+    border-top: 1px solid #0BA1DD;
+    border-bottom: 1px solid #0BA1DD;
+  }
+
+  .bread li a::before {
+    display: block;
+    width: 16px;
+    height: 14px;
+    border-right: 2px solid #0BA1DD;
+    margin: 0 -18px -14px auto;
+    background: #fff;
+    content: " ";
+    -webkit-transform: skew(45deg);
+    -moz-transform: skew(45deg);
+    transform: skew(45deg);
+  }
+
+  .bread li a::after {
+    display: block;
+    width: 16px;
+    height: 14px;
+    border-right: 2px solid #0BA1DD;
+    margin: -14px -18px 0 auto;
+    background: #fff;
+    content: "";
+    -webkit-transform: skew(-45deg);
+    -moz-transform: skew(-45deg);
+    transform: skew(-45deg);
+  }
+
+  .bread li.current a {
+    color: #fff;
+    background: #0BA1DD;
+    border: 1px solid #fff;
+    /* padding: 0px 10px 0px 20px; */
+  }
+
+  .bread li.current a::before, .bread li.current a::after {
+    background: #0BA1DD;
+    border-right: 2px solid #fff;
+  }
+
+  /* 投稿一覧のスタイリング
+  --------------------- */
+  .posts-index {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 48px;
+  }
+
+  .posts-index .content-top {
+    display: none;
+  }
+
+
+  .posts-index .content-second {
+    display: none;
+  }
+
+
+  .posts-index .content-third {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #f5f5f5;
+  }
+
+  .posts-index .content-fourth {
+    display: none;
+  }
+
+  .subject-tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding-bottom: 55px;
+  }
+  .subject-tab-wrap:after {
+    content: '';
+    width: 100%;
+    height: 0px;
+    background: #FFFFFF;
+    display: block;
+  }
+  .subject-tab-label {
+    background: #FFF;
+    font-size: 14px;
+    text-align: center;
+    order: -1;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    width: 16.66%;
+    height: 40px;
+    color: #9F9F9F;
+    border-left: solid 1px #9F9F9F;
+    border-bottom: solid 1px #9F9F9F;
+    box-sizing: border-box;
+  }
+
+  .etc {
+      border-right: solid 1px #9F9F9F;
+      box-sizing: border-box;
+  }
+
+  .subject-tab-label:not(:last-of-type) {
+    margin-right: 0px;
+  }
+  .subject-tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /* アクティブなタブ */
+  .subject-tab-switch:checked+.japanese {
+    color: #FF7575;
+    opacity: 1;
+  }
+
+  .subject-tab-switch:checked+.math {
+    color: #65A8FF;
+    opacity: 1;
+  }
+
+  .subject-tab-switch:checked+.science {
+    color: #F09EFF;
+    opacity: 1;
+  }
+
+  .subject-tab-switch:checked+.social {
+    color: #40E67D;
+    opacity: 1;
+  }
+
+  .subject-tab-switch:checked+.english {
+    color: #FFBD24;
+    opacity: 1;
+  }
+
+  .subject-tab-switch:checked+.etc {
+    color: #0A9BD5;
+    opacity: 1;
+  }
+
+  .subject-tab-switch:checked+.subject-tab-label+.subject-tab-content {
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    transition: .5s opacity;
+  }
+  /* ラジオボタン非表示 */
+  .subject-tab-switch {
+    display: none;
+  }
+
+  .subject-tab-content {
+    background: #fff;
+    border: 0;
+    padding: 0;
+  }
+
+
+  .subject-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .subject-table th {
+    padding-left: 5px;
+  }
+  .subject-table tr {
+    height: 69px;
+  }
+
+  .subject-table tbody tr:nth-child(odd){
+    background-color: #F5F5F5
+  }
+
+  .subject-table thead {
+    display: none;
+  }
+
+  .subject-table .icon {
+    padding-left: 15px;
+  }
+
+  .subject-table .name {
+    width: 150px;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 0px 3px 15px;
+    display: block;
+    float: left;
+    text-align: left;
+  }
+
+  .subject-table .title {
+    width: 280px;
+    padding: 3px 0px 3px 15px;
+    display: block;
+    float: left;
+    text-align: left;
+  }
+
+
+  .subject-table .date {
+    width: 150px;
+    height: 24px;
+    text-align: right;
+    font-size: 13px;
+    font-family: ヒラギノ丸ゴ Pro;
+    letter-spacing: 0px;
+    color: #0A9BD5;
+    opacity: 1;
+    font-weight:lighter;
+    display: inline;
+    /* padding-top: 14px 5px 3px 0; */
+    margin: 5px 0 0 8%;
+  }
+
+  .subject-table .comments {
+    text-align: center;
+    padding: 3px 10px 6px 0px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    float: right;
+    background-image: url(/img/comment_icon.png);
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-position: 11% 15%;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .subject-table .title p {
+    font-size: 13px;
+    font-family: ヒラギノ丸ゴ Pro;
+    letter-spacing: 0px;
+    color: #999999;
+    opacity: 1;
+    font-weight:lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+
+  .to-top {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+  }
+
+  /* 質問投稿１ページ目スタイリング
+  --------------------------- */
+  .posts-create-container {
+    text-align: center;
+    width: 100%;;
+    margin: 0;
+    padding-top: 42px;
+  }
+
+  .top-content {
+    padding: 24px 0px 0px 0px;
+    background: #0BA1DD;
+  }
+
+  .top-content h1 {
+    color: #fff;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 24px;
+  }
+
+  .top-content img {
+    width: 120px;
+  }
+
+  .posts-create-container .second-content {
+    width: 100%;
+    background: #EEEEEE;
+  }
+
+  .posts-create-container .description {
+    text-align: center;
+    width: 96%;
+    margin: 20px 2%;
+    padding-top: 10px;
+  }
+
+  .description img {
+    width: 100%;
+  }
+
+  .description-head {
+    font-size: 14px;
+    font-family: Hiragino Maru Gothic Pro;
+    letter-spacing: 0px;
+    color: #0BA1DD;
+    font-weight: lighter;
+  }
+
+  .description-text01, .description-text02 {
+    width: 100%;
+    font-family: ヒラギノ丸ゴ Pro;
+    color: #999999;
+    font-weight: lighter;
+    text-align: left;
+    padding: 4px 0px;
+  }
+
+  .description-text01 {
+    font-size: 12px;
+  }
+
+  .description-text02 {
+    font-size: 11px;
+  }
+
+  .input-form {
+    padding: 5px 0 100px 0;
+    text-align: left;
+  }
+
+  .input-form .section {
+    /* width: 524px; */
+    padding: 12px;
+    text-align: left;
+    /* padding-left: 66px; */
+  }
+
+  .input-form input {
+    width: 100%;
+    height: 32px;
+    /* display: inline-block; */
+    border-radius: 5px;
+    border: 1px solid #707070;
+  }
+
+  .input-form textarea {
+    width: 100%;
+    height: 122px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .input-form label {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  #next-btn {
+    width: 80%;
+    height: 32px;
+    background: #0BA1DD;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    margin: 0px 10%;
+  }
+
+  select {
+    width: 128px;
+    height: 32px;
+    border-radius: 5px;
+    background: #fff;
+  }
+   option {
+     width: 128px;
+     height: 24px;
+     color: #999999;
+     background: #fff;
+   }
+
+
+  /* 講師選択フォーム　スタイリング
+  -------------------------- */
+  .teacher-select-container {
+    text-align: center;
+    width: 100%;
+    /* height:　auto; */
+    margin: 0;
+    padding-top: 42px;
+  }
+
+  .teacher-select-container .second-content {
+    width: 100%;
+    background: #EEEEEE;
+  }
+
+  .teacher-select-table-head {
+    text-align: left;
+    padding: 10px;
+    height: 30px;
+    position: relative;
+  }
+
+  .teacher-select-table-head img {
+    display: inline-block;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  .teacher-select-table-head h3 {
+    display: inline-block;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: 13px;
+    left: 48px;
+  }
+
+  .none-select {
+    width: 100%;
+    display: inline-block;
+    /* padding: 20px 0; */
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .none-select img {
+    position: absolute;
+    top: 7px;
+    left: 23px;
+    display: inline-block;
+    height: 29px;
+  }
+
+  .none-select p {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    display: inline-block;
+    color: #fff;
+    /* padding: 20px 5px; */
+  }
+
+  .none-select button {
+    position: relative;
+    width: 210px;
+    height: 41px;
+    background: #0BA1DD;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+  }
+
+  .teacher-select-table {
+    width: 100%;
+  }
+
+  .teacher-select-table tr {
+    border-bottom: solid 1px #A4A4A4;
+    padding: 15px 5px;
+  }
+
+  .teacher-select-table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .teacher-select-table .name p {
+    font-size: 8px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+
+  .teacher-select-table .name h3 {
+    font-size: 12px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+
+
+  .teacher-select-table .select input {
+    width: 88px;
+    height: 20px;
+    color: #fff;
+    background: #0BA1DD 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 10px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+  }
+
+  /* 時間選択フォーム　スタイリング
+  -------------------------- */
+
+  .date-select-container {
+    text-align: center;
+    width: 100%;
+    /* height: 90vh; */
+    margin: 0;
+    padding-top: 42px;
+  }
+
+  .date-select-container .second-container {
+    padding: 10px 2px;
+    background: #F5F5F5;
+  }
+
+  .second-container .teacher-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    /* background: #fff; */
+    display: inline-block;
+  }
+
+  .teacher-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .second-container .teacher-info {
+    width: auto;
+    display: inline-block;
+  }
+
+  .second-container .teacher-info h3 {
+    color: #999999;
+    font-size: 18px;
+    font-family: ヒラギノ丸ゴ Pro;
+  }
+  .second-container .teacher-info p {
+    color: #999999;
+  }
+
+  .date-select-container .third-content {
+    width: 100%;
+    height: auto;
+    background: #F5F5F5;
+    padding: 30px 0;
+    /* margin-bottom: 200px; */
+  }
+
+
+  .date-select-table {
+    width: 100%;
+    color: #999999;
+    background: #F5F5F5;
+    border-collapse: collapse;
+    border: 0px;
+    margin: 0px;
+  }
+
+  .date-select-table-head a {
+    padding: 0px 20px;
+    color: #999;
+  }
+
+  .date-select-table th {
+    width: 60px;
+    height: 42px;
+    border: solid 0.2px #999999;
+    opacity: 0.8;
+  }
+
+  .date-select-table tr {
+    height: 20px;
+    border: solid 0.2px #999999;
+  }
+
+  .date-select-table thead {
+    background: #fff;
+  }
+
+  .date-select-table .time {
+    width: 80px;
+    padding-left: 4px;
+    background: #fff;
+  }
+
+  .possible {
+    color: #FF5A5A;
+  }
+
+  .Sat {
+    color: #65A8FF;
+  }
+
+  .Sun {
+    color: #FF7575;
+  }
+
+
+  #today{
+    background: rgba(137,209,34, 0.5);
+  }
+
+  thead .week-info {
+    height: 42px;
+    font-size: 24px;
+    font-family: ヒラギノ丸ゴ Pro;
+    background: #F5F5F5;
+    border: solid 1px #F5F5F5;
+    color: #0BA1DD;
+  }
+
+  .week-info th {
+      border: none;
+  }
+
+  .previous-week a, .next-week a {
+    color: #0BA1DD;
+  }
+
+  .date-select-table-foot {
+    width: 100%;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 10px 0 30px 0;
+  }
+  .date-select-table-foot a{
+    color: #999;
+    font-size: 24px;
+  }
+
+  .date-select-table button {
+    width: 30px;
+    height: 32px;
+    color: red;
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-weight: lighter;
+  }
+
+
+  /* ここから */
+  .tab-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      background: #f5f5f5;
+  }
+  .tab-label {
+    font-size: 12px;
+    width: 15.66%;
+    color: White;
+    background-color:rgba(11,161,221,0.5);
+    padding: 6px 0px;
+    margin: 0 0.5%;
+    order:-1;
+    color: #fff;
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .tab-content {
+      width: 100%;
+      display: none;
+  }
+
+  .tab-switch:checked+.tab-label {
+      background: #f5f5f5;
+      color: #0BA1DD;
+      opacity: 1;
+      border-top: solid 1px #9F9F9F;
+      border-left: solid 1px #9F9F9F;
+      border-right: solid 1px #9F9F9F;
+      box-sizing: border-box;
+  }
+
+  .tab-switch:checked+.tab-label+.tab-content {
+      display: block;
+  }
+
+  .tab-switch {
+      display: none;
+  }
+
+  /**
+   * FilePond Custom Styles
+   */
+  .filepond--drop-label {
+  	color: #4c4e53;
+  }
+
+  .filepond--label-action {
+  	text-decoration-color: #babdc0;
+  }
+
+  .filepond--panel-root {
+  	border-radius: 2em;
+  	background-color: #edf0f4;
+  	height: 1em;
+  }
+
+  .filepond--item-panel {
+  	background-color: #595e68;
+  }
+
+  .filepond--drip-blob {
+  	background-color: #7f8a9a;
+  }
+
+}

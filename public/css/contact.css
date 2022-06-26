@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: 90vh;
+  background: #0BA1DD;
+  padding-top: 60px;
+}
+
+
+.contact-contents {
+  width: 90%;
+  height: auto;
+  background: #F5F5F5;
+  margin: 10px auto;
+  /* padding-top: 60px; */
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.contact-contents h1 {
+  font-size: 20px;
+  font-family: ヒラギノ丸ゴ Pro;
+  color: #0BA1DD;
+}
+
+.form {
+  width: 90%;
+  text-align: left;
+  margin: 15px 5%;
+}
+
+.form textarea {
+  width: 90%;
+}
+
+.submit {
+  margin: 20px auto;
+}
+.submit-btn {
+  width: 240px;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  background: #0BA1DD;
+  color: #fff;
+}

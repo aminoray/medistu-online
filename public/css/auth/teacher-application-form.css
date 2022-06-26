@@ -1,0 +1,175 @@
+/* Common */
+
+.container {
+    width: 100%;
+    height: 110vh;
+    margin: auto;
+    background: #0ba1dd;
+}
+
+.teacher-app-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 24px;
+}
+
+#app-form {
+    margin: 0 auto;
+    width: 600px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.app-form-content > h3 {
+    font-size: 20px;
+    font-family: ヒラギノ丸ゴ Pro;
+    color: #0ba1dd;
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.asterisk {
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.notes {
+    font-size: 11px;
+    font-weight: lighter;
+    font-family: ヒラギノ丸ゴ Pro;
+    color: #999999;
+    text-align: left;
+    padding-left: 56px;
+}
+
+.input-form-table {
+    text-align: left;
+    margin: auto;
+}
+
+.input-form-table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.input-form-table th {
+    padding-right: 50px;
+}
+
+.input-form-table tr {
+    padding-bottom: 30px;
+}
+
+.input-form-table input {
+    width: 304px;
+    height: 32px;
+    font-size: 18px;
+}
+
+.attention {
+    font-size: 11px;
+    font-family: ヒラギノ丸ゴ Pro;
+}
+
+.register-btn {
+    width: 240px;
+    height: 32px;
+    background: #89d122;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: ヒラギノ丸ゴ Pro;
+    font-size: 14px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.btn-container {
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    /*　for iPad 　*/
+
+    .teacher-app-container {
+        padding: 40px;
+        width: calc(100% - 80px);
+        margin: 0;
+        text-align: center;
+    }
+
+    #app-form {
+        width: 100%;
+    }
+
+    /* セル幅を自動調整 */
+    table,
+    th,
+    td {
+        width: auto;
+    }
+
+    .input-form-table td {
+        width: 70%;
+    }
+
+    .input-form-table input {
+        width: 90%;
+    }
+
+    .input-form-table th {
+        font-size: 14px;
+        font-weight: lighter;
+        font-family: ヒラギノ丸ゴ Pro;
+        color: #999999;
+        padding-right: 2em;
+        padding-left: 1em;
+    }
+
+    .plan-content {
+        font-size: 14px;
+        font-weight: lighter;
+        font-family: ヒラギノ丸ゴ Pro;
+        color: #999999;
+    }
+
+    .attention {
+        font-weight: lighter;
+        font-family: ヒラギノ丸ゴ Pro;
+        color: #999999;
+    }
+}
+@media screen and (max-width: 480px) {
+    /*　for mobile　*/
+
+    .container {
+        width: 100%;
+        height: 115vh;
+        margin: auto;
+        background: #0ba1dd;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .teacher-app-container {
+        padding: 80px 10px;
+        width: calc(100% - 20px);
+        margin: 0;
+        text-align: center;
+    }
+
+    .plan-name br {
+        display: block;
+    }
+
+    .plan-name {
+        padding: 0 8px;
+    }
+}

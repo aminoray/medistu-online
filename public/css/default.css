@@ -1,0 +1,989 @@
+/* 各パーツの初期値設定
+--------------------  */
+/* input,textarea {
+  -webkit-appearance: none;
+} */
+
+* {
+    margin:0px;
+    /* padding:0px; */
+
+}
+
+body {
+    font-family: 'ヒラギノ丸ゴ Pro W4', sans-serif;
+    width:100%;
+    color:#999999;
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+-webkit-appearance: none;
+-webkit-text-size-adjust: 100%;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+}
+
+a {
+    text-decoration: none;
+  }
+
+h3 {
+    font-size: 16px;
+    color:#999999;
+}
+
+
+/* フラッシュメッセージ
+----------------- */
+.flash_message {
+  width: 100%;
+  color: #fff;
+  background: #89D122;
+  text-align: center;
+  padding-top: 8px;
+  height: 28px;
+  opacity:0.7;
+  /* display: table; */
+  -webkit-animation: fade-in-out 4s ease 0.1s forwards;
+  animation: fade-in-out 4s ease 0.1s forwards;
+  visibility: hidden;
+  z-index: 1000;
+  position: absolute;
+}
+
+@-webkit-keyframes fade-in-out {
+  0% {visibility: hidden; opacity: 0;}
+  10% {visibility: visible; opacity: 1;}
+  80% {visibility: visible; opacity: 1;}
+  100% {visibility: hidden; opacity: 0;}
+}
+
+@keyframes fade-in-out {
+  0% {visibility: hidden; opacity: 0;}
+  10% {visibility: visible; opacity: 1;}
+  80% {visibility: visible; opacity: 1;}
+  100% {visibility: hidden; opacity: 0;}
+}
+
+/* モーダルウィンドウ
+------------------- */
+.modal{
+	display: flex;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	align-items:center;
+	justify-content:center;
+	left:0;
+	top:0;
+	z-index:10;
+}
+
+.modal .modal-wrap{
+	background-color:#fff;
+	color:#ccc;
+	padding:1rem;
+	border-radius:8px;
+	pointer-events: none;
+	z-index:20;
+}
+
+.modal-wrap .controls{
+	display:flex;
+	justify-content:flex-end;
+	margin-top:10px;
+}
+
+.modal-wrap #notify-close, .modal-wrap #notify-details,
+.modal-wrap #news-close, .modal-wrap #news-details,
+.modal-wrap #teacher-close {
+	pointer-events: all;
+	padding:3px 5px;
+	margin-left:10px;
+	border:1px solid #36d4c7;
+	color: #36d4c7;
+	border-radius:3px;
+	cursor:pointer;
+	width:50px;
+	text-align:center;
+}
+
+.my-button input {
+  pointer-events: all;
+  cursor:pointer;
+  width: auto;
+  color: #36d4c7;
+  text-align:center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hidden {
+  display: none;
+}
+
+#notify-modal.hidden, #news-modal.hidden, #teacher-modal.hidden{
+  transform: translate(0, -500px);
+}
+
+
+
+
+/* ヘッダーに関するcss
+-------------------- */
+
+header {
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+    display: flex;
+	  position: fixed;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    left:0;
+  	top:0;
+  	margin:0;
+    z-index:1001;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+}
+
+.header-container-mobile {
+  display: none;
+}
+
+
+.fas {
+    color: white;
+}
+
+
+.logo {
+    padding: 5px 9px;
+    width: 156px;
+    height: 46px;
+    float:left;
+/* background: transparent url('img/logo_color.png') 0% 0% no-repeat padding-box; */
+/* opacity: 1; */
+}
+
+.header-left {
+  float: left;
+  padding-top: 5px;
+  padding-left: 9px;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-list li {
+    width:100px;
+    text-align: center;
+    float: right;
+    /* padding: 16px 20px; */
+    list-style-type:none;
+    /* background-color:#0BA1DD; */
+    color:#A4A4A4;
+    opacity:1;
+    padding: 16px 0 0 0;
+}
+
+.header-list a{
+  padding: 10px;
+  margin-top: 10px;
+  bottom: 10px;
+  color: #A4A4A4;
+}
+
+.login-and-mypage {
+    background-color:#0BA1DD;
+    color: #fff;
+    height: 40px;
+}
+
+.login-and-mypage a {
+  color: #fff;
+}
+
+
+
+
+/* サイドバーに関するCSS
+--------------------- */
+
+/* サイドバー */
+.sidebar {
+    width: 304px;
+    height: 100%;
+    float: left;
+}
+/* 上部　ユーザープロフィール */
+.user-profeel {
+    height:112px;
+    background-color:#088EC4;
+    padding-top: 10px;
+}
+.user-img {
+    width:33%;
+    height:112px;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+}
+.user-img img {
+    border-radius: 50%;
+    width:  72px;
+    height: 72px;
+    object-fit: cover;
+}
+.user-name {
+    width:67%;
+    padding-top: 25px;
+    float: left;
+    font-size: 20px;
+}
+.user-name a {
+  color: #fff;
+}
+.user-level {
+    height:24px;
+    width:104px;
+    text-align: center;
+    background-color: white;
+    color:#088EC4;
+    line-height: 24px;
+    margin-top: 10px;
+}
+/* 下部　コンテンツ */
+.sidebar-bottom {
+    height:100%;
+    background-color:#0BA1DD;
+    padding-bottom: 100px;
+}
+.sidebar-contents {
+    padding-top:30px;
+    padding-left:20px;
+    list-style: none;
+    color: white;
+    line-height: 30px;
+    /* background-color: crimson; */
+    margin-bottom: 10px;
+}
+.sidebar-contents li {
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.sidebar-contents p {
+  color: #FFF;
+}
+.sidebar-add {
+    padding-top: 5px;
+    text-align: center;
+}
+.sidebar-add img {
+    width:270px;
+    /* height:198px; */
+}
+.upgrade-resistration-btn {
+    text-align: center;
+    padding-top: 10px;
+    /* background-color: crimson; */
+}
+.btn-square-pop {
+    width:264px;
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #89D122;/*背景色*/
+    border-bottom: solid 2px #598615;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+  }
+
+  .btn-square-pop:active {
+    border-bottom: solid 2px #89D122;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+  }
+
+.line-resistration-btn {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.line-btn {
+  width:264px;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 16px;
+  background: #00C300;/*背景色*/
+  border-bottom: solid 2px #598615;/*少し濃い目の色に*/
+  border-radius: 4px;/*角の丸み*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  font-weight: bold;
+}
+.line-btn i{
+  padding: 0 5px;
+}
+
+
+
+
+/* フッターに関するCSS
+--------------------- */
+
+footer {
+    width:100%;
+    height:283px;
+    background-color:#707070;
+    margin: auto;
+    /* text-align: center; */
+
+
+}
+.footer-top {
+    height:216px;
+    width: 70%;
+    color:#FFFFFF;
+    padding-top:26px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.section {
+  width: 250px;
+  flex: 0 1 calc(100% / 3);
+  padding: 10px;
+}
+
+.footer-list {
+    width:250px;
+    list-style: none;
+    color:#CBCBCB;
+    font-size: 15px;
+    line-height: 33px;
+}
+.footer-list  a {
+  color: white;
+}
+.footer-item {
+    /* position: relative; */
+    /* left: -50%; */
+}
+.footer-bottom {
+    text-align: center;
+    height:67px;
+    background-color:#505050;
+    line-height: 67px;
+    color:#CBCBCB;
+    margin: auto;
+}
+
+.footer-for-mobile {
+  display: none;
+}
+
+/* posts-index-box のコンポーネントのスタイル
+----------------------------------------  */
+.posts-index-box-mobile {
+  display: none;
+}
+
+.posts-index-box {
+  width: 872px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.posts-index-box-body {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  border-style: solid;
+  border-top-width: 8px;
+  border-top-color: #0BA1DD;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+
+.posts-tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.posts-tab-wrap:after {
+  content: '';
+  width: 733px;
+  height: 3px;
+  /* background: #0BA1DD; */
+  display: block;
+  order: -1;
+}
+
+.posts-tab-label {
+  width: 139px;
+  color: White;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 16px;
+  padding: 3px .5em;
+  order: -1;
+  position: relative;
+  z-index: 1;
+  /* cursor: pointer; */
+  border-radius: 5px 5px 0 0;
+  flex: 1;
+}
+.posts-tab-label:not(:last-of-type) {
+  margin-right: 5px;
+}
+.posts-tab-content {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+}
+/* アクティブなタブ */
+.posts-tab-switch:checked+.posts-tab-label {
+  background: #0BA1DD;
+}
+.posts-tab-switch:checked+.posts-tab-label+.posts-tab-content {
+  height: 218px;
+  overflow: auto;
+  padding: 0;
+  opacity: 1;
+  transition: .5s opacity;
+  box-shadow: 0 0 3px rgba(0,0,0,.2);
+  background: #fff;
+}
+/* ラジオボタン非表示 */
+.posts-tab-switch {
+  display: none;
+}
+
+
+.posts-index-box-table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.posts-index-box-table th {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.posts-index-box-table tbody tr:nth-child(odd){
+  background-color: #F5F5F5
+  /* background-color:rgba(255,0 0,0.8); */
+}
+
+.posts-index-box-table thead tr {
+  background: #fff;
+  border-style: solid;
+  border-bottom-color: #999999;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.posts-index-box-table .title {
+  width: 500px;
+}
+
+.posts-index-box-table .date {
+  width: 250px;
+}
+
+.posts-index-box-table .comments {
+  text-align: center;
+  padding-right: 10px;
+}
+
+.posts-index-box-table .title p {
+  padding-left: 5px;
+  font: W4 16px/24px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  color: #0BA1DD;
+  opacity: 1;
+  font-weight:lighter;
+}
+
+.posts-index-box-table .title p:hover {
+  opacity: 0.5;
+}
+
+.posts-index-box-table .date p {
+  text-align: left;
+  font: W4 16px/24px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  color: #999999;
+  opacity: 1;
+  font-weight:lighter;
+}
+
+.posts-index-box .more-read {
+  float: right;
+  padding-top: 5px;
+}
+
+.posts-index-box .more-read h4 {
+  text-align: left;
+  font: W4 16px/24px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  color: #0BA1DD;
+  opacity: 1;
+}
+
+
+/* notify-box　のスタイル
+---------------------------  */
+
+.notify-box {
+  width: 600px;
+  height: 460px;
+}
+
+.notify-box input[name=navinput]{
+  display: none;
+}
+
+.notify-box .listnav01:hover {
+  color: #999;
+  opacity: 0.5;
+}
+
+.notify-box-body {
+  height: 160px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  border-style: solid;
+  border-top-width: 3px;
+  border-top-color: #fff;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+
+}
+
+.notify-tab-wrap {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.notify-tab-wrap:after {
+  content: '';
+  width: 350px;
+  height: 3px;
+  display: block;
+  order: -1;
+}
+
+.notify-tab-label {
+  color: #999999;
+  background: #F5F5F5;
+  white-space: nowrap;
+  text-align: center;
+  padding: 3px .2em;
+  order: -1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  flex: 1;
+}
+
+.notify-tab-label P {
+  display: inline-block;
+}
+
+.content-second .notify-tab-label .count {
+ background-image: url(/img/maru_blue.png);
+ background-size: 20px;
+ background-repeat: no-repeat;
+ background-position: center;
+ padding: 2px 10px;;
+ color: #fff;
+ font-size: 12px;
+}
+
+.notify-tab-label:not(:last-of-type) {
+  margin-right: 5px;
+}
+.notify-tab-content {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+/* アクティブなタブ */
+.notify-tab-switch:checked+.notify-tab-label {
+  background: #fff;
+}
+.notify-tab-switch:checked+.notify-tab-label+.notify-tab-content {
+  height: auto;
+  overflow: auto;
+  opacity: 1;
+  transition: .5s opacity;
+}
+/* ラジオボタン非表示 */
+.notify-tab-switch {
+  display: none;
+}
+
+.notify-box-table {
+  width: 100%;
+  background: #fff;
+}
+
+.notify-box-table .title {
+  width: 400px;
+  text-align: left;
+  padding-left: 14px;
+}
+.notify-box-table .date {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.notify-box-table .title p {
+  color: #999999;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.notify-box-table .date p {
+  color: #999999;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.notify-box .more-read {
+  float: right;
+  padding-top: 15px;
+}
+
+.notify-box .more-read h4 {
+  text-align: left;
+  font: W4 16px/24px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  color: #999999;
+  opacity: 1;
+}
+
+.none-messege {
+  color: #999;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+/* 今週のシフト　スタイリング
+------------------------  */
+.shift-side-container {
+  width: 272px;
+  height: 292px;
+  margin-left: 16px;
+  padding-top: 16px;;
+}
+
+.shift-side-container  p {
+  color: #fff;
+  font-family: ヒラギノ丸ゴ Pro;
+  font-size: 16px;
+}
+.side-shift-bottom-bottun {
+  border: solid 1px #11ADEB;
+  border-radius: 5px;
+  width: 107px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 9px;
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: #11ADEB;
+}
+
+.shift-side {
+  width: 100%;
+  height: 224px;
+  font-size: 14px;
+  color: #999999;
+  background: #F5F5F5;
+  border-collapse: collapse;
+  border: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.shift-side th {
+  width: 16px;
+  border: solid 0.2px #999999;
+  opacity: 0.8;
+}
+
+.shift-side tr {
+  height: 32px;
+  border: solid 0.2px #999999;
+}
+
+.shift-side thead {
+  background: #fff;
+}
+.shift-side .period {
+  width: 36px;
+  padding-left: 4px;
+  background: #fff;
+}
+
+.shift-isnull-content {
+  width: 272px;
+  height: 224px;
+  background: #000;
+  color: #FFF;
+  position: absolute;
+  z-index: 20;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.shift-isnull-content h3 {
+  color: #fff;
+  font-size: 16px;
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+
+/* 時間割コンポーネントのスタイリング
+----------------------------  */
+.time-schedule {
+  width: 300px;
+  height: 200px;
+}
+
+.third-content button {
+  width: 80px;
+  height: 32px;
+  border-radius: 50px;
+}
+
+.time-schedule-table {
+  width: 300px;
+  color: #999999;
+  background: #F5F5F5;
+  border-collapse: collapse;
+  border: 0px;
+  margin: 0px;
+}
+
+.time-schedule-table th {
+  width: 18px;
+  border: solid 0.2px #999999;
+  opacity: 0.8;
+}
+
+.time-schedule-table tr {
+  height: 20px;
+  border: solid 0.2px #999999;
+}
+
+.time-schedule-table .title, .time-schedule-table .period {
+  background: #fff;
+}
+
+
+/* teacher-unspecified-box のコンポーネントのスタイル
+----------------------------------------  */
+.teacher-unspecified-box {
+  width: 872px;
+  height: 300px;
+  margin-bottom: 100px;
+}
+
+.teacher-unspecified-box-body {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  border-style: solid;
+  border-top-width: 8px;
+  border-top-color: #0BA1DD;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+
+.teacher-unspecified-tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.teacher-unspecified-tab-wrap:after {
+  content: '';
+  width: 733px;
+  height: 3px;
+  /* background: #0BA1DD; */
+  display: block;
+  order: -1;
+}
+
+.teacher-unspecified-tab-label {
+  width: 139px;
+  color: #FFF;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 16px;
+  padding: 3px .5em;
+  order: -1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+  flex: 1;
+}
+.teacher-unspecified-tab-label:not(:last-of-type) {
+  margin-right: 5px;
+}
+.teacher-unspecified-tab-content {
+  width: 100%;
+  height: 210px;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+}
+/* アクティブなタブ */
+.teacher-unspecified-tab-switch:checked+.teacher-unspecified-tab-label {
+  background: #0BA1DD;
+}
+.teacher-unspecified-tab-switch:checked+.teacher-unspecified-tab-label+.teacher-unspecified-tab-content {
+  height: 218px;
+  overflow: auto;
+  padding: 0;
+  opacity: 1;
+  transition: .5s opacity;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+/* ラジオボタン非表示 */
+.teacher-unspecified-tab-switch {
+  display: none;
+}
+
+
+.teacher-unspecified-box-table{
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.teacher-unspecified-box-table th {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.teacher-unspecified-box-table tbody tr:nth-child(odd){
+  background-color: #F5F5F5
+  /* background-color:rgba(255,0 0,0.8); */
+}
+
+.teacher-unspecified-box-table thead tr {
+  background: #fff;
+  border-style: solid;
+  border-bottom-color: #999999;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.teacher-unspecified-box-table .title {
+  width: 306px;
+}
+
+.teacher-unspecified-box-table .subject {
+  width: 200px;
+}
+
+.teacher-unspecified-box-table .date {
+  width: 250px;
+}
+
+.teacher-unspecified-box-table .request {
+  text-align: center;
+  padding-right: 30px;
+}
+
+.teacher-unspecified-box-table .title p {
+  padding-left: 5px;
+  font: W4 16px/24px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  color: #0BA1DD;
+  opacity: 1;
+  font-weight:lighter;
+}
+
+.teacher-unspecified-box-table .title p:hover {
+  opacity: 0.5;
+}
+
+.teacher-unspecified-box-table .date p {
+  text-align: left;
+  font: W4 16px/24px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  color: #999999;
+  opacity: 1;
+  font-weight:lighter;
+}
+
+.request-btn {
+  width: 72px;
+  height: 22px;
+  border: none;
+  color: #0BA1DD;
+  font: 16px Hiragino Maru Gothic Pro;
+  letter-spacing: 0px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.request-btn:hover {
+  opacity: 0.5;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1276px) {
+  .posts-index-box-table .title {
+    width: 274px;
+  }
+  .posts-index-box-table .date {
+    width: 143px;
+}
+}

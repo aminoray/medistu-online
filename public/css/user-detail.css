@@ -1,0 +1,182 @@
+/* Common */
+
+.container {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.detail-container {
+    width: 100%;
+    height: 90vh;
+    margin: 80px auto;
+}
+
+.top-content {
+    width: 700px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+}
+
+.top-head {
+    width: 80%;
+    height: 150px;
+    margin: 20px auto;
+    border-bottom: solid 1px #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-head img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    width: auto;
+    padding-top: 0px;
+    padding: 0 20px;
+}
+
+.user-name h3 {
+    padding-bottom: 5px;
+}
+
+.arrow-mark {
+    color: #0ba1dd;
+}
+
+.top-content .top-middle {
+    width: 80%;
+    height: 120px;
+    margin: 20px auto;
+    border-bottom: solid 1px #999999;
+}
+
+.top-content .top-middle .pre {
+    display: inline-block;
+}
+
+.top-content .top-middle .count {
+    display: inline-block;
+    position: relative;
+    border: solid 1px #0ba1dd;
+    border-radius: 5px;
+    width: 150px;
+    height: 80px;
+    display: inline-block;
+    margin: 0px 1px;
+    padding: 2px;
+}
+
+.top-middle .count h3 {
+    text-align: left;
+    /* width: 95%; */
+    color: #0ba1dd;
+    font-size: 14px;
+    font-family: ヒラギノ丸ゴ Pro;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.top-middle .count h2 {
+    color: #0ba1dd;
+    font-size: 24px;
+    font-family: ヒラギノ丸ゴ Pro;
+}
+
+.top-content .top-middle .next {
+    display: inline-block;
+}
+
+.top-content .top-foot {
+    width: 80%;
+    height: 120px;
+    margin: 20px auto;
+}
+
+.top-middle .edit {
+    margin: 10px 0px;
+}
+
+.edit-button {
+    border: none;
+    background: #fff;
+    background-color: #89d122;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    padding: 0px;
+}
+
+.fa-wrench {
+    padding-right: 5px;
+}
+
+.top-foot {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.top-foot p {
+    display: inline-block;
+    width: 140px;
+}
+
+.top-foot ul {
+    padding-left: 130px;
+    list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+    /*　for iPad 　*/
+
+    .top-content {
+        width: 80%;
+    }
+
+    .top-foot ul {
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width: 480px) {
+    /*　for mobile　*/
+
+    .top-content {
+        width: 90%;
+    }
+
+    .user-name {
+        width: auto;
+        padding-top: 0px;
+        padding: 0 10px;
+    }
+
+    .top-foot {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .top-foot p {
+        display: inline-block;
+        width: 120px;
+    }
+
+    .top-foot ul {
+        padding-left: 0px;
+    }
+
+    .resister-content {
+        display: flex;
+    }
+}

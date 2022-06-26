@@ -1,0 +1,301 @@
+/* notify-box　のスタイル
+---------------------------  */
+.container {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+@media screen and (min-width:1024px) {
+  .notify-index {
+    background: #0BA1DD;
+  }
+
+  .content-top h1 {
+    color: #fff;
+    font-family: Hiragino Maru Gothic Pro;
+  }
+
+  .content-third {
+    width: 1024px;
+    margin: auto;
+  }
+
+  .notify-box {
+    width: 600px;
+    height: 460px;
+    margin: auto;
+  }
+
+  .notify-box input[name=navinput]{
+    display: none;
+  }
+
+  .notify-box .listnav01:hover {
+    color: #999;
+    opacity: 0.5;
+  }
+
+  .notify-box-body {
+    height: 360px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    border-style: solid;
+    border-top-width: 3px;
+    border-top-color: #fff;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+
+  }
+
+  .notify-tab-wrap {
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px 0;
+  }
+  .notify-tab-wrap:after {
+    content: '';
+    width: 350px;
+    height: 3px;
+    display: block;
+    order: -1;
+  }
+
+  .notify-tab-label {
+    color: #999999;
+    background: #F5F5F5;
+    white-space: nowrap;
+    text-align: center;
+    padding: 3px .2em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    flex: 1;
+  }
+  .notify-tab-label:not(:last-of-type) {
+    margin-right: 5px;
+  }
+  .notify-tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /* アクティブなタブ */
+  .notify-tab-switch:checked+.notify-tab-label {
+    background: #fff;
+  }
+  .notify-tab-switch:checked+.notify-tab-label+.notify-tab-content {
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    transition: .5s opacity;
+  }
+  /* ラジオボタン非表示 */
+  .notify-tab-switch {
+    display: none;
+  }
+
+  .notify-box-table {
+    width: 100%;
+    background: #fff;
+  }
+
+  .notify-box-table .title {
+    width: 400px;
+    text-align: left;
+    padding-left: 14px;
+  }
+  .notify-box-table .date {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .notify-box-table .title p {
+    color: #999999;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .notify-box-table .date p {
+    color: #999999;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .content-fourth h3{
+    font-family: Hiragino Maru Gothic Pro;
+    color: #fff;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  .notify-index {
+    background: #f5f5f5;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 48px;
+  }
+
+  .content-top {
+    display: none;
+  }
+
+  .content-second {
+    display: none;
+  }
+
+  .content-third {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #f5f5f5;
+  }
+
+  /* .notify-box input[name=navinput]{
+    display: none;
+  }
+
+  .notify-box .listnav01:hover {
+    color: #999;
+    opacity: 0.5;
+  } */
+
+  .notify-box-body {
+    height: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding-bottom: 25px;
+  }
+
+  .notify-tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+  }
+  .notify-tab-wrap:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    display: block;
+  }
+
+  .notify-tab-label {
+    background: #FFF;
+    font-size: 14px;
+    text-align: center;
+    order: -1;
+    padding: 10px 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    width: 50%;
+    height: 40px;
+    color: #9F9F9F;
+    /* border-left: solid 1px #9F9F9F; */
+    border-bottom: solid 1px #9F9F9F;
+    box-sizing: border-box;
+    z-index: 10;
+    position: fixed;
+  }
+
+  .news-label {
+    border-left: solid 1px #9F9F9F;
+    box-sizing: border-box;
+    right: 0;
+  }
+
+  .notify-tab-label:not(:last-of-type) {
+    margin-right: 0px;
+  }
+  .notify-tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background: #fff;
+    border: 0;
+    padding: 0;
+    overflow-scrolling: touch;  /* スクロールを滑らかにする */
+    -webkit-overflow-scrolling: touch;  /* スクロールを滑らかにする */
+  }
+  /* アクティブなタブ */
+  .notify-tab-switch:checked+.notify-tab-label {
+    color: #0BA1DD;
+    opacity: 1;
+  }
+
+  .notify-tab-switch:checked+.notify-tab-label+.notify-tab-content {
+    height: 90vh;
+    overflow: auto;
+    opacity: 1;
+    transition: .5s opacity;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+  }
+  /* ラジオボタン非表示 */
+  .notify-tab-switch {
+    display: none;
+  }
+  .notify-box-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .notify-box-table th {
+    padding-left: 5px;
+    /* text-align: left; */
+    /* display: block; */
+  }
+  .notify-box-table tr {
+    height: 69px;
+  }
+
+  .notify-box-table tbody tr:nth-child(odd){
+    background-color: #F5F5F5
+  }
+
+  .notify-box-table thead {
+    display: none;
+  }
+
+  .notify-box-table .title {
+    width: 65%;
+    text-align: left;
+    padding-left: 14px;
+  }
+  .notify-box-table .date {
+    width: 35%;
+    padding-right: 10px;
+  }
+
+  .notify-box-table .title p {
+    color: #999999;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .notify-box-table .date p {
+    color: #0BA1DD;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+
+  .notify-box .more-read {
+    display: none;
+  }
+  .notify-box .none-messege {
+    padding-left: 8px;
+  }
+
+}
